@@ -1,0 +1,42 @@
+
+.menu {
+    width: 100%;
+
+		// .menu__wrapper
+
+		&__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            
+		}
+
+		// .menu__item
+
+		&__item {
+            list-style: none;
+		}
+
+		// .menu__link
+
+		&__link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $black;
+            text-decoration: none;
+            
+            &:hover {
+                color: $orage;
+                text-decoration: underline;
+            }
+		}
+}
+
+.mobile-menu{
+      display: none;
+}

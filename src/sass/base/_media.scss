@@ -1,0 +1,345 @@
+@media (max-width: 1450px) {
+  .container {
+    padding: 0 30px;
+    max-width: 108.28vw;
+  }
+  .content .buttons__button-green,
+  .content .buttons__button-orange {
+    font-size: 11px;
+  }
+  .content .slider__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1250px) {
+  .content .buttons__button-green,
+  .content .buttons__button-orange {
+    font-size: 10px;
+  }
+  .content .buttons__link {
+    margin-right: 20px;
+  }
+  .content .advantages {
+    padding: 53px 21px 41px 21px;
+  }
+  .content .slider__title {
+    font-size: 45px;
+  }
+  .content {
+    padding-top: 34px;
+  }
+  .home {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1150px) {
+  .logo {
+    max-width: 100px;
+    margin: 0 10px;
+    img {
+      width: 100%;
+    }
+  }
+  .content .buttons__button-green,
+  .content .buttons__button-orange {
+    font-size: 9px;
+  }
+  .download__link img {
+    width: 74px;
+  }
+  .support {
+    margin-right: 10px;
+  }
+  .support__link {
+    margin-right: 10px;
+    img {
+      width: 35px;
+    }
+  }
+  .content .slider__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .modal {
+    max-width: 550px;
+  }
+  .modal__input {
+    max-width: 356px;
+  }
+  .modal__btn {
+    max-width: 356px;
+  }
+
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: $gray;
+    padding: 10px 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    &__burger {
+      background-color: transparent;
+      border: none;
+      width: 25px;
+    }
+    &__close {
+      display: none;
+      background-color: transparent;
+      border: none;
+      width: 25px;
+    }
+  }
+  .mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    background-color: $gray;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 90px;
+    transform: translateX(-1000px);
+    transition: transform 0.5s ease;
+    .header__wrapper {
+      padding-top: 24px;
+      padding-bottom: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: none;
+
+      .home {
+        margin-right: 0;
+        padding-bottom: 10px;
+      }
+    }
+    .menu__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    .menu__link {
+      padding: 10px 0;
+      display: block;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 0 40px 0;
+    }
+    .logo {
+      display: none;
+    }
+    .tel {
+      display: none;
+    }
+    .content .slider__title {
+      margin: 0;
+    }
+    
+  }
+  .active {
+    transform: translateX(0);
+  }
+  .logo {
+    max-width: none;
+    width: 75px;
+    height: 75px;
+  }
+
+  .container {
+    max-width: 1000px;
+  }
+  .content .slider {
+    max-width: 728px;
+    order: 1;
+    margin-left: 0;
+    text-align: center;
+  }
+  .content .advantages {
+    max-width: 225px;
+    width: 100%;
+    order: 2;
+    padding: 29px 14px 24px 23px;
+    max-width: 262px;
+    height: auto;
+  }
+  .content .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content .buttons__button-green,
+  .content .buttons__button-orange {
+    max-width: 276px;
+    height: 60px;
+    padding: 0 22px 0 45px;
+    margin-bottom: 12px;
+    font-size: 10px;
+    margin-right: 0;
+  }
+  .buttons__block .buttons__text {
+    display: none;
+  }
+  .content__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content .slider__description {
+    justify-content: center;
+  }
+  .content .slider__title {
+    margin-top: 80px;
+    line-height: 55px;
+  }
+  .advantages__btn {
+    position: relative;
+    width: 33px;
+    height: 33px;
+    background-color: $orage;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      border: 2px solid $orage;
+      left: -20px;
+      opacity: 0;
+      right: -20px;
+      top: -20px;
+      bottom: -20px;
+      border-radius: 50%;
+      animation: pulse 2.5s linear infinite;
+    }
+    &::after {
+      animation-delay: 1.25s;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+  }
+  .advantages__btn-close {
+    position: relative;
+    display: none;
+    width: 33px;
+    height: 33px;
+    background-color: $orage;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .advantages__item {
+    margin-bottom: 28px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin: 0;
+    }
+    &::after {
+      right: 0;
+      left: 0;
+      width: 200px;
+    }
+  }
+  .max {
+    max-width: 160px;
+  }
+  .content .mb {
+    margin-bottom: 7px;
+  }
+  .advantages__text {
+    background-color: transparent;
+    margin-bottom: 15px;
+    border: none;
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 8px;
+    cursor: pointer;
+
+    color: #b5b5b5;
+  }
+  .advantages__hidden {
+    display: none;
+    transition: all 0.5 ease;
+  }
+  .tel__circle {
+        background-color: $green;
+    }
+    .wrapper{
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 585px) {
+  .modal {
+    max-width: 300px;
+    padding: 20px;
+  }
+  .modal__header {
+    padding: 5px 0px 28px 0px;
+  }
+  .modal__title {
+    display: inline-block;
+    font-size: 25px;
+  }
+  .modal__input,
+  .modal__btn {
+    height: 60px;
+  }
+  .content .slider__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .content .slider__text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .content .circle__item {
+    width: 6px;
+    height: 6px;
+  }
+  .wrapper {
+    background: url(../img/mobile_bg.png) no-repeat center center;
+    background-size: cover;
+  }
+  .tel__link {
+    font-size: 14px;
+  }
+  .container {
+    padding: 0;
+  }
+  .logo {
+    margin: 0;
+  }
+  .content .advantages {
+    margin-top: 70px;
+  }
+
+  .tel__text {
+    font-size: 7px;
+    line-height: 9px;
+  }
+}

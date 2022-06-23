@@ -1,0 +1,211 @@
+.content {
+  padding-top: 84px;
+
+  // .content__wrapper
+
+  &__wrapper {
+    display: flex;
+  }
+
+  .advantages {
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+    background-size: cover;
+    width: 15vw;
+    background-color: #fff;
+    height: 650px;
+    box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    padding: 53px 41px 41px 41px;
+
+    // .advantages__wrapper
+
+    &__wrapper {
+    }
+
+    // .advantages__item
+
+    &__item {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: $black;
+      position: relative;
+      margin-bottom: 54px;
+      &::after {
+        content: "";
+        width: 9.844vw;
+        height: 54px;
+        position: absolute;
+        left: -20px;
+        right: 0;
+        bottom: -60px;
+        background: url(../img/menu_shadow.svg) no-repeat;
+      }
+      &:last-child::after{
+        content: none;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  // slider
+
+  .slider {
+    margin-left: 70px;
+    max-width: 53.5vw;
+
+    // .slider__title
+
+    &__title {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 55px;
+      line-height: 85px;
+      margin: 30px 0 0 0;
+
+      color: $black;
+      span {
+        font-weight: 600;
+      }
+    }
+
+    // .slider__description
+
+    &__description {
+      display: flex;
+      align-items: center;
+    }
+
+    // .slider__text
+
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 39px;
+
+      text-align: center;
+      margin-left: 9px;
+
+      color: $black;
+    }
+  }
+  .circle {
+    display: flex;
+
+    // .circle__item
+
+    &__item {
+      width: 10px;
+      height: 10px;
+
+      border: 1.5px solid rgba(18, 200, 104, 0.75);
+      border-radius: 100%;
+      margin-right: 7px;
+    }
+    .active {
+      border: 1.5px solid rgba(18, 200, 104, 0.25);
+    }
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    padding-top: 45px;
+
+    // .buttons__block
+
+    &__block {
+    }
+
+    // .buttons__button
+
+    &__button-green {
+      box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+      border-radius: 500px;
+      max-width: 25.531vw;
+      width: 100%;
+      height: 100px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      border: none;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      background-color: $green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 53px;
+      margin-right: 18px;
+
+      color: $white;
+      &:hover {
+        background-color: $green_hover;
+      }
+    }
+    &__button-orange {
+      box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+      border-radius: 500px;
+      max-width: 25.531vw;
+      width: 100%;
+      height: 100px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      border: none;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      background-color: $orage;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 53px;
+
+      color: $white;
+      &:hover {
+        background-color: $orage_hover;
+      }
+    }
+    &__link {
+      color: $white;
+      text-decoration: none;
+      margin-right: 30px;
+    }
+  }
+}
+.buttons__block .buttons__text {
+  max-width: 276px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #1c1c1c;
+  margin-top: 38px;
+  visibility: hidden;
+}
+.buttons__block .buttons__text span {
+  font-weight: 600;
+}
+.buttons__block:hover .buttons__text {
+  visibility: visible;
+}
+.advantages__text,
+.advantages__btn-close,
+.advantages__btn {
+  display: none;
+}
+

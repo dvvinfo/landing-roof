@@ -1,0 +1,32 @@
+@import 'libs/normalize';
+@import 'libs/font';
+
+@import 'base/variables';
+@import 'base/animations';
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+.wrapper {
+    background: url(../img/BG.png) no-repeat;
+    background-size: cover;
+    height: auto;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: normal;
+   font-style: normal;
+   padding-bottom: 162px;
+}
+.container{
+    width: 100%;
+    max-width: 81.771vw;
+    margin: 0 auto;
+    position: relative
+}
+
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/info';
+@import 'blocks/content';
+@import 'blocks/modal';
+@import 'base/media';
+

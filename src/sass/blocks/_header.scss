@@ -1,0 +1,26 @@
+.header {
+  // .header__wrapper
+
+  &__wrapper {
+    padding-top: 44px;
+    padding-bottom: 37px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.7);
+  }
+}
+.home {
+  margin-right: 100px;
+
+  // .logo__img
+
+  &__img {
+  }
+  &:hover .home__img {
+    fill: $orage_hover;
+  }
+}
+
+.select {
+  background-image: url("../img/icons/v.png");
+}
